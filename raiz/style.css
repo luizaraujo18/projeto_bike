@@ -1,0 +1,199 @@
+body {
+  /* Escolhe a fonte da página*/
+  font-family: Arial, Helvetica, sans-serif;
+
+  /*Reseta toda margem do body*/
+  margin: 0rem;
+
+  /*Coloca uma cor de fundo na página*/
+  background-color: #f7f7f7;
+
+  /*Inicia o display da página como grid*/
+  display: grid;
+
+  /*Cria um espaçamento entre os elementos*/
+  gap: 3.75rem;
+
+  /*Coloca todos os itens no centro*/
+  justify-items: center;
+
+  /*Cria um espaçamento entre os elementos*/
+  margin-top: 3.75rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/*Retira o sublinhado por padrão vem no link*/
+a {
+  text-decoration: none;
+}
+
+/*Reseta todas as configurações default da lista*/
+ul {
+  list-style: none;
+  margin: 0rem;
+  padding: 0rem;
+}
+
+/*Reseta todas as configurações default*/
+p,
+h1,
+h2,
+h3 {
+  margin: 0px;
+}
+
+/*Define o tamanho da letra e o espaçoes entre elas*/
+p {
+  font-size: 1.25rem;
+  line-height: 1.3;
+}
+
+.menu {
+  /*Define os elementos todos em linha*/
+  display: flex;
+
+  /*Se houver quebra de linha vai para a linha de baixo*/
+  flex-wrap: wrap;
+
+  /*Coloca os itens do menu ao centro*/
+  justify-content: center;
+
+  /*Define o espaçamento entre os elementos do menu*/
+  gap: 1.25rem;
+}
+
+.menu a {
+  /*Por padrão o link é display inline, foi mudado para block*/
+  display: block;
+
+  /*Cor de fundo dos elemento do menu*/
+  background-color: #ffffff;
+
+  /*Espaçamento interno dos elementos*/
+  padding: 1rem 2rem;
+
+  /*Arredondamento das bordas*/
+  border-radius: 0.313rem;
+
+  /*Cor do texto*/
+  color: #000000;
+
+  /*Coloca todo o texto em letras maiusculas*/
+  text-transform: uppercase;
+
+  /*Coloca uma borda e transparente para não empurrar os demais elementos*/
+  border: 2px solid #fff;
+}
+
+/*Os elementos de link ao passar o mouse ficam com uma borda vermelha*/
+.menu a:hover {
+  border-color: #e21;
+}
+
+/*O elementos botão ao passar o mouse fica com uma cor de fundo*/
+.botao:hover {
+  background-color: #900;
+}
+
+header {
+  /*Display em colunas e foi iniciado*/
+  display: grid;
+
+  /*Centralizando os elementos do header*/
+  justify-items: center;
+
+  /*Colocando espaçamento nos elementos do header*/
+  gap: 3.75rem;
+}
+
+/*Testo do h1 com o tamanho da fonte*/
+.introducao h1 {
+  font-size: 2rem;
+}
+
+.conteudo {
+  /*Definindo o conteudo em colunas e foi iniciado*/
+  display: grid;
+
+  /*Definindo  em quantas colunas será a página e foi iniciado*/
+  grid-template-columns: 1fr 1fr;
+
+  /*Definindo  a largura máxima*/
+  max-width: 62.5rem;
+}
+
+.introducao {
+  background-color: #fff;
+  padding: 40px;
+  text-align: right;
+  position: relative;
+  display: grid;
+  gap: 20px;
+  align-content: center;
+  justify-items: end;
+}
+
+.introducao::before {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background-color: #e21;
+  position: absolute;
+  top: 30px;
+  right: -30px;
+}
+
+.botao {
+  background-color: #e21;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.subtitulo {
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.2);
+  text-align: right;
+  padding: 2.5rem;
+  align-self: center;
+  background-image: url("/imagens/onda.svg");
+}
+
+.vantagens {
+  background-color: #fff;
+  padding: 2.5rem;
+}
+
+.vantagens-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.625rem 1.25rem;
+  padding: 1.25rem;
+  border-left: 4px solid transparent;
+}
+
+.vantagens-item:hover {
+  border-color: #e21;
+}
+
+.vantagens-item:nth-child(odd) {
+  background-color: #f7f7f7;
+}
+
+.vantagens-item p {
+  grid-column: 2;
+}
+
+.rodape {
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 2.5rem;
+  box-sizing: border-box;
+}
